@@ -31,7 +31,7 @@ Este é um projeto simples desenvolvido durante o curso de Lógica de Programaç
    ```bash
    git clone https://github.com/seu-usuario/calculadora-nivel-heroi.git
 
-##Contribuições
+###Contribuições
 
 Sinta-se à vontade para contribuir para este projeto! Para isso, você pode fazer um fork do repositório e enviar um pull request.
 
