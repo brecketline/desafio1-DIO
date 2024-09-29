@@ -9,58 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spicy+Rice&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Spicy Rice', cursive; 
-            background-image: url('schenin.logo.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #FFB3BA; 
-        }
-        h2 {
-            color: #A3C1DA; 
-        }
-        label {
-            color: #A3C1DA; 
-        }
-        button {
-            background-color: #A3C1DA;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'Karla', sans-serif; 
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center; /* Centraliza o texto */
-        }
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 12px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        .result {
-            margin-top: 15px;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
 
@@ -77,34 +27,6 @@
         <div class="result" id="resultado"></div>
     </div>
 
-    <script>
-        function calcularNivel() {
-            let nome = document.getElementById("nome").value;
-            let xp = parseInt(document.getElementById("xp").value);
-            let resultado = "";
-
-            if (xp < 1000) {
-                resultado = "O herói de nome " + nome + " está no nível Bronze.";
-            } 
-            else if (xp >= 1000 && xp < 2000) {
-                resultado = "O herói de nome " + nome + " está no nível Prata.";
-            } 
-            else if (xp >= 2000 && xp < 6000) {
-                resultado = "O herói de nome " + nome + " está no nível Ouro.";
-            } 
-            else if (xp >= 6000 && xp < 7000) {
-                resultado = "O herói de nome " + nome + " está no nível Platina.";
-            } 
-            else if (xp >= 7000 && xp < 9000) {
-                resultado = "O herói de nome " + nome + " está no nível Ascendente.";
-            } 
-            else if (xp >= 9000) {
-                resultado = "O herói de nome " + nome + " está no nível Imortal.";
-            }
-
-            document.getElementById("resultado").innerText = resultado;
-        }
-    </script>
-
+    <script src="js/script.js"></script> 
 </body>
 </html>
